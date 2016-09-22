@@ -1,0 +1,33 @@
+.page-footer{
+	height: 500px;
+	background-image: url(../img/footer-bg.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+
+	color:#fff;
+
+	display: flex;
+	justify-content: center;
+}
+
+.page-footer__wrap{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	height: 300px;
+	width: 300px;
+	margin-top: auto;
+	text-align: center;
+}
+
+@media @mobile-width-only{
+	.page-footer{
+		height:240px;
+	}
+
+	.page-footer__wrap{
+		height:200px;
+	}
+}

@@ -1,0 +1,44 @@
+.contact__wrap{
+	.container-fluid;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+
+	padding:70px 0;
+
+}
+
+.contact__form{
+	width:34%;
+	// margin-left: auto;
+
+	& input,
+	& textarea{
+		border:none;
+		font-size:.8em;
+		width:100%;
+		padding: 12px 0;
+		text-align: center;
+		background-color: #EEEEEE;
+	}
+
+	& input{
+		border:none;
+		margin-bottom: 10px;
+	}
+}
+
+@media @mobile-width-only{
+	.contact__wrap{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.contact__text h2{
+		padding-left: 30px;
+	}
+
+	.contact__form{
+		width:100%;
+	}
+}

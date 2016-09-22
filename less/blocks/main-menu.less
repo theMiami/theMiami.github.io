@@ -1,0 +1,57 @@
+.main-menu{
+	margin-bottom: 35px;
+	
+	& ul{
+		padding: 0;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+		transition:all 0.5s ease-in-out;
+	}
+
+	& li{
+		list-style: none;
+		text-transform: uppercase;
+		color: #fff;
+		cursor:pointer;
+	}
+}
+
+.main-menu__humburger{
+	display: none;
+}
+
+
+@media @mobile-width-only{
+	.main-menu{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+
+		text-align: center;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		
+		& ul{
+			overflow: hidden;
+			display: flex;
+			flex-direction: column;
+		}
+
+		& li{
+			margin: 3px 0;
+		}
+
+		& i{
+			margin-top: 20px;
+			color:#fff;
+			font-size: 1.1em;
+			cursor:pointer;
+		}
+	}
+
+	.main-menu__humburger{
+		display: block;
+	}
+}
